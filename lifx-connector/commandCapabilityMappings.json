@@ -1,0 +1,41 @@
+{
+    "partnerToSTCapabilityMapping": {
+        "power": {
+            "capability": "st.switch",
+            "attribute": "switch"
+        },
+        "brightness": {
+            "capability": "st.switchLevel",
+            "attribute": "level",
+            "valueMultiplier": 100
+        },
+        "connected": {
+            "capability": "st.healthCheck",
+            "attribute": "healthStatus",
+            "valueMap": {
+                "true" : "online",
+                "false": "offline" 
+            }
+        },
+        "color": {
+            "hue": {
+                "capability": "st.colorControl",
+                "attribute": "hue",
+                "valueMultiplier": 0.2778
+            },
+            "saturation": {
+                "capability": "st.colorControl",
+                "attribute": "saturation",
+                "valueMultiplier": 100
+            },
+            "kelvin": {
+                "capability": "st.colorTemperature",
+                "attribute": "colorTemperature",
+                "valueMultiplier": 1
+            }
+        }
+    },
+    "stToPartnerCapabilityMapping": {
+
+    }
+}

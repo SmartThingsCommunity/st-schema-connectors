@@ -1,0 +1,18 @@
+{
+    "baseUrl": "https://api.lifx.com/v1/lights",
+    "headers": {
+        "Accept": "*/*"
+    },
+    "discoveryRequest": {
+        "uri": "/all",
+        "method": "GET"
+    },
+    "stateRefreshRequest": {
+        "uri": "/all",
+        "method": "GET"
+    },
+    "commandRequest": {
+        "uri": "/states",
+        "method": "PUT"
+    }
+}
