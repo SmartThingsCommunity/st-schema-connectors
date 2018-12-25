@@ -1,0 +1,15 @@
+{
+  "name": "viper-lifx",
+  "version": "1.0.0",
+  "description": "LifX ST schema implementation",
+  "main": "index.js",
+  "keywords": [
+    "st-schema",
+    "lifx"
+  ],
+  "author": "SmartThings",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "st-schema": "1.0.4"
+  }
+}
