@@ -8,7 +8,7 @@ const stPartnerHelper = new partnerHelper(requestConfig, commandCapabilityMappin
 async function discoveryRequest(request, response) {
   const results = await stPartnerHelper.requestBuilder("discoveryRequest", request.authentication.token, null, { "debug": true });
   for (let result of results) {
-    const device = response.addDevice(result.id, result.label, getDeviceHandler(result.product.capabilities));
+    const device = response.addDevice(result.id, result.label, _getDeviceHandler(result.product.capabilities));
     device.manufacturerName(result.product.company).modelName(result.product.name).hwVersion(result.product.identifier).roomName(result.location.name).addGroup(result.group.name);
   }
 }
@@ -69,7 +69,7 @@ module.exports.handler = lambda({
   stateRefreshRequest
 });
 
-function getDeviceHandler(lifxCapabilities) {
+function _getDeviceHandler(lifxCapabilities) {
   if (lifxCapabilities.has_color) {
     return "c2c-rgbw-color-bulb"
   } else {
