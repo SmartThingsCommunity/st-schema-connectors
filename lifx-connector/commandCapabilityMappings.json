@@ -11,7 +11,7 @@
         },
         "connected": {
             "capability": "st.healthCheck",
-            "attribute": "healthStatus",
+            "attribute": "DeviceWatch-DeviceStatus",
             "valueMap": {
                 "true" : "online",
                 "false": "offline" 
