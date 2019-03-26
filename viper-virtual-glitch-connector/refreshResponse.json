@@ -1,0 +1,26 @@
+{
+    
+    "fake-c2c-switch": {
+        "externalDeviceId": "fake-c2c-switch",
+        "states": [
+            {
+                "component": "main",
+                "capability": "st.switch",
+                "attribute": "switch",
+                "value": "on"
+            },
+            {
+                "component": "main",
+                "capability": "st.switchLevel",
+                "attribute": "level",
+                "value": 10
+            },
+            {
+                "component": "main",
+                "capability": "st.healthCheck",
+                "attribute": "healthStatus",
+                "value": "online"
+            }
+        ]
+    }
+}

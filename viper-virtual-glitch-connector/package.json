@@ -1,0 +1,19 @@
+{
+  "name": "lifx",
+  "version": "1.0.0",
+  "description": "LifX ST schema implementation",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "Viper-Virtual-Glitch"
+  ],
+  "author": "SmartThings",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.13.4",
+    "st-schema": "^1.0.5"
+  }
+}
