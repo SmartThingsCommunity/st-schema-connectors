@@ -1,7 +1,7 @@
 {
     
     "fake-c2c-switch": {
-        "externalDeviceId": "fake-c2c-switch",
+        "externalDeviceId": "fake-c2c-dimmer",
         "states": [
             {
                 "component": "main",

@@ -7,7 +7,7 @@
     },
     "devices": [
       {
-            "externalDeviceId": "fake-c2c-switch",
+            "externalDeviceId": "fake-c2c-dimmer",
             "friendlyName": "Virtual Switch",
             "deviceHandlerType": "c2c-dimmer",
             "manufacturerInfo": {
