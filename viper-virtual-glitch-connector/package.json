@@ -1,7 +1,7 @@
 {
-  "name": "lifx",
+  "name": "viper-virtual-glitch",
   "version": "1.0.0",
-  "description": "LifX ST schema implementation",
+  "description": "Virtual ST schema implementation",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
