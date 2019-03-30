@@ -1,6 +1,6 @@
 {
     
-    "fake-c2c-switch": {
+    "fake-c2c-dimmer": {
         "externalDeviceId": "fake-c2c-dimmer",
         "states": [
             {
