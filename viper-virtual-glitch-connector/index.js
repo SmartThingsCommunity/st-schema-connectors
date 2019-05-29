@@ -17,7 +17,7 @@ function discoveryRequest(requestId) {
 }
 
 function commandRequest(request) {
-  let response = new CommandResponse(request.headers.requestId)
+  let response = new CommandResponse(request.body.headers.requestId)
   request.body.devices.map(({ externalDeviceId, deviceCookie, commands }) => {
     const device = response.addDevice(externalDeviceId, deviceCookie);
     stPartnerHelper.mapSTCommandsToState(device, commands)
@@ -40,8 +40,8 @@ function stateRefreshRequest(request) {
 }
 
 function grantCallbackAccess(request) {
-  console.log("grantCallbackAccess token is:", request.callbackAuthentication.code)
-  console.log("grantCallbackAccess clientId is:", request.callbackAuthentication.clientId)
+  console.log("grantCallbackAccess token is:", request.body.callbackAuthentication.code)
+  console.log("grantCallbackAccess clientId is:", request.body.callbackAuthentication.clientId)
   return {};
 }
 
