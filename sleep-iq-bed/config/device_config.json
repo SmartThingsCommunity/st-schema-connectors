@@ -1,0 +1,307 @@
+{
+  "mnmn": "fUCj",
+  "vid": "ST_14a57f66-cffd-4851-80e3-7d0487aa00ab",
+  "version": "0.0.1",
+  "type": "profile",
+  "dashboard": {
+    "states": [
+      {
+        "component": "Bed",
+        "capability": "presenceSensor",
+        "version": 1
+      }
+    ],
+    "actions": []
+  },
+  "detailView": [
+    {
+      "component": "Bed",
+      "capability": "sleepSensor",
+      "version": 1,
+      "values": [],
+      "patch": []
+    },
+    {
+      "component": "Bed",
+      "capability": "presenceSensor",
+      "version": 1,
+      "values": [],
+      "patch": []
+    },
+    {
+      "component": "Preset",
+      "capability": "switchLevel",
+      "version": 1,
+      "values": [
+		{
+            "key": "level",
+			"range": [
+				1,
+                6
+            ],
+            "step": 1
+        }]
+    },
+    {
+      "component": "FootWarmer",
+      "capability": "refresh",
+      "version": 1,
+      "values": [],
+      "patch": []
+    },
+    {
+      "component": "FootWarmer",
+      "capability": "switchLevel",
+      "version": 1,
+      "values": [],
+      "patch": []
+    },
+	{
+      "component": "Head",
+      "capability": "refresh",
+      "version": 1,
+      "values": [],
+      "patch": []
+    },
+    {
+      "component": "Head",
+      "capability": "switchLevel",
+      "version": 1,
+      "values": [],
+      "patch": []
+    },
+    {
+      "component": "Foot",
+      "capability": "refresh",
+      "version": 1,
+      "values": [],
+      "patch": []
+    },
+    {
+      "component": "Foot",
+      "capability": "switchLevel",
+      "version": 1,
+      "values": [],
+      "patch": []
+    },
+    {
+      "component": "SleepNumber",
+      "capability": "refresh",
+      "version": 1,
+      "values": [],
+      "patch": []
+    },
+    {
+      "component": "SleepNumber",
+      "capability": "switchLevel",
+      "version": 1,
+      "values": [],
+      "patch": []
+    }
+  ],
+  "automation": {
+    "conditions": [
+      {
+        "component": "main",
+        "capability": "refresh",
+        "version": 1,
+        "values": [],
+        "patch": []
+      },
+      {
+        "component": "main",
+        "capability": "healthCheck",
+        "version": 1,
+        "values": [],
+        "patch": []
+      },
+      {
+        "component": "FootWarmer",
+        "capability": "refresh",
+        "version": 1,
+        "values": [],
+        "patch": []
+      },
+      {
+        "component": "FootWarmer",
+        "capability": "switchLevel",
+        "version": 1,
+        "values": [],
+        "patch": []
+      },
+      {
+        "component": "SleepNumber",
+        "capability": "refresh",
+        "version": 1,
+        "values": [],
+        "patch": []
+      },
+      {
+        "component": "SleepNumber",
+        "capability": "switchLevel",
+        "version": 1,
+        "values": [],
+        "patch": []
+      },
+      {
+        "component": "Head",
+        "capability": "refresh",
+        "version": 1,
+        "values": [],
+        "patch": []
+      },
+      {
+        "component": "Head",
+        "capability": "switchLevel",
+        "version": 1,
+        "values": [],
+        "patch": []
+      },
+      {
+        "component": "Foot",
+        "capability": "refresh",
+        "version": 1,
+        "values": [],
+        "patch": []
+      },
+      {
+        "component": "Foot",
+        "capability": "switchLevel",
+        "version": 1,
+        "values": [],
+        "patch": []
+      },
+      {
+        "component": "Bed",
+        "capability": "sleepSensor",
+        "version": 1,
+        "values": [],
+        "patch": []
+      },
+      {
+        "component": "Bed",
+        "capability": "presenceSensor",
+        "version": 1,
+        "values": [],
+        "patch": []
+      },
+      {
+        "component": "Preset",
+        "capability": "switchLevel",
+        "version": 1,
+		"values": [
+		{
+            "key": "level",
+			"range": [
+				1,
+                6
+            ],
+            "step": 1
+        }]
+
+      }
+    ],
+    "actions": [
+      {
+        "component": "main",
+        "capability": "refresh",
+        "version": 1,
+        "values": [],
+        "patch": []
+      },
+      {
+        "component": "main",
+        "capability": "healthCheck",
+        "version": 1,
+        "values": [],
+        "patch": []
+      },
+      {
+        "component": "FootWarmer",
+        "capability": "refresh",
+        "version": 1,
+        "values": [],
+        "patch": []
+      },
+      {
+        "component": "FootWarmer",
+        "capability": "switchLevel",
+        "version": 1,
+        "values": [],
+        "patch": []
+      },
+      {
+        "component": "SleepNumber",
+        "capability": "refresh",
+        "version": 1,
+        "values": [],
+        "patch": []
+      },
+      {
+        "component": "SleepNumber",
+        "capability": "switchLevel",
+        "version": 1,
+        "values": [],
+        "patch": []
+      },
+      {
+        "component": "Head",
+        "capability": "refresh",
+        "version": 1,
+        "values": [],
+        "patch": []
+      },
+      {
+        "component": "Head",
+        "capability": "switchLevel",
+        "version": 1,
+        "values": [],
+        "patch": []
+      },
+      {
+        "component": "Foot",
+        "capability": "refresh",
+        "version": 1,
+        "values": [],
+        "patch": []
+      },
+      {
+        "component": "Foot",
+        "capability": "switchLevel",
+        "version": 1,
+        "values": [],
+        "patch": []
+      },
+      {
+        "component": "Bed",
+        "capability": "sleepSensor",
+        "version": 1,
+        "values": [],
+        "patch": []
+      },
+      {
+        "component": "Bed",
+        "capability": "presenceSensor",
+        "version": 1,
+        "values": [],
+        "patch": []
+      },
+      {
+        "component": "Preset",
+        "capability": "switchLevel",
+        "version": 1,
+		"values": [
+		{
+            "key": "level",
+			"range": [
+				1,
+                6
+            ],
+            "step": 1
+        }]
+
+      }
+    ]
+  },
+  "migration": true
+}
