@@ -1,0 +1,42 @@
+service: sleep-iq-bed
+
+frameworkVersion: "2"
+
+package:
+  include:
+    - index.js
+    - connector.js
+    - oauth2.js
+    - lib/**
+    - config/**
+  exclude:
+    - .git/**
+    - .gitignore
+    - .env*
+    - test/**
+    - server.js
+    - bin/**
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+
+  # replace with closest region to your geographic location for ideal latency
+  # see: https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints
+  region: us-east-1 
+
+#plugins:
+#  - serverless-offline
+
+functions:
+  smartapp:
+    handler: index.handler
+    timeout: 10
+    environment:
+      SLEEPIQ_EMAIL: ${file(./config/my-serverless.yaml):SLEEPIQ_EMAIL}
+      SLEEPIQ_PASSWORD: ${file(./config/my-serverless.yaml):SLEEPIQ_PASSWORD}
+      ACCESS_TOKEN_CLIENT_ID: ${file(./config/my-serverless.yaml):ACCESS_TOKEN_CLIENT_ID}
+      CLIENT_ID: ${file(./config/my-serverless.yaml):CLIENT_ID}
+      CLIENT_SERCRET: ${file(./config/my-serverless.yaml):CLIENT_SERCRET}
+      USER_INFO_ENDPOINT: ${file(./config/my-serverless.yaml):USER_INFO_ENDPOINT}

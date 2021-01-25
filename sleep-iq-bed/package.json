@@ -1,0 +1,39 @@
+{
+  "name": "sleep-iq-bed",
+  "version": "1.0.0",
+  "description": "Sleep IQ SmartThing Bed",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gilderman/sleep-iq-bed.git"
+  },
+  "main": "server.js",
+  "scripts": {
+    "test": "NODE_ENV=test ava --verbose",
+    "start": "node server.js"
+  },
+  "author": "Ilia Gilderman",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "axios": "0.21.1",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "jwk-to-pem": "^2.0.4",
+    "st-schema": "^1.3.6",
+    "prettyjson": "^1.2.1"
+  },
+  "engines": {
+    "node": "^12"
+  },
+  "bugs": {
+    "url": "https://github.com/gilderman/sleep-iq-bed/issues"
+  },
+  "homepage": "https://github.com/gilderman/sleep-iq-bed#readme",
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {
+    "serverless-offline": "^6.8.0"
+  },
+  "keywords": []
+}
